@@ -5,21 +5,21 @@
 class GitAlerts < Formula
   desc "Tool to detect and monitor GitHub org users public repositories"
   homepage "https://github.com/boringtools/git-alerts"
-  version "1.7.0"
+  version "1.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/boringtools/git-alerts/releases/download/v1.7.0/git-alerts_Darwin_x86_64.tar.gz"
-      sha256 "bef55d332e24fb91be4634c9a004ac464ad06352ac07cdec34b23ac721bcdb20"
+      url "https://github.com/boringtools/git-alerts/releases/download/v1.8.0/git-alerts_Darwin_x86_64.tar.gz"
+      sha256 "84e51c4cc3bc001fa48859911ecb1c9878213bb7319c72045f5e15a1389ad285"
 
       def install
         bin.install "git-alerts"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/boringtools/git-alerts/releases/download/v1.7.0/git-alerts_Darwin_arm64.tar.gz"
-      sha256 "56d59cb0d9fc02dc1484543f7ce25105bb4a0c4026ca0af752681cb0d46b0666"
+      url "https://github.com/boringtools/git-alerts/releases/download/v1.8.0/git-alerts_Darwin_arm64.tar.gz"
+      sha256 "1ce46ec95acb4de3cf0c388a7ac7056ecaa8a916eb7ef9d0adad62e2dcb11837"
 
       def install
         bin.install "git-alerts"
@@ -29,15 +29,15 @@ class GitAlerts < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boringtools/git-alerts/releases/download/v1.7.0/git-alerts_Linux_x86_64.tar.gz"
-      sha256 "02945e68847cd75295f57eeb766114af3d7c879c00e2db6977a698d0dc54523d"
+      url "https://github.com/boringtools/git-alerts/releases/download/v1.8.0/git-alerts_Linux_x86_64.tar.gz"
+      sha256 "4832a9f1777cb6c9f7bd456419f4442e8ed82c7f193611084013d5c31a229ba1"
       def install
         bin.install "git-alerts"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boringtools/git-alerts/releases/download/v1.7.0/git-alerts_Linux_arm64.tar.gz"
-      sha256 "060345a131865a4b93ff6fe5768c0cc4c9c7c27e56b898a2ea24373b502bf10a"
+      url "https://github.com/boringtools/git-alerts/releases/download/v1.8.0/git-alerts_Linux_arm64.tar.gz"
+      sha256 "10997a8638e409bc4a3d404b2601ecc986130def2fb2e6f183039a83a0135ced"
       def install
         bin.install "git-alerts"
       end
